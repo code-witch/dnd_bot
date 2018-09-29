@@ -10,18 +10,18 @@ class Item:
 		self.id = items
 		items += 1
 	
-	def setTitle(self, title):
+	def set_title(self, title):
 		self.title = title
 
-	def setDescription(self, desc):
+	def set_desc(self, desc):
 		self.description = desc
 	
-	def setSell(self, sell):
+	def set_sell(self, sell):
 		self.sell = sell
 
-	def setBuy(self, buy):
+	def set_buy(self, buy):
 		self.buy = buy
 
-	def setAmount(self, amt):
+	def set_amount(self, amt):
 		self.amount = amt
 	
