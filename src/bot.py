@@ -5,7 +5,7 @@ import pickle
 from item import Item
 from random import randint
 from log import Logger
-# from inventory import Inventory
+from inventory import Inventory
 
 log = Logger()
 inventory = []
@@ -49,7 +49,7 @@ async def additem(ctx, title, desc, sell, buy, amt):
     if dm_check(ctx):
         pickle.load(inv_file) # loads from file
         inventory.append(Item(title, desc, sell, buy, amt))
-        pickle.dump(inventory, inv_file) # dumps datat in file
+        pickle.dump(inventory, inv_file) # dumps data in file
         await bot.say('added {0} to the inventory.'.format(title))
     else:
         await bot.say('You can not add an item to the inventory.')
