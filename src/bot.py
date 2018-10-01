@@ -27,7 +27,8 @@ def dm_check(ctx):
 async def checklog():
     message = log.read()
     await bot.say(message)
-	
+
+'''	
 @bot.command(pass_context=True)
 async def prefix(ctx, pre):
     """changes the prefix of the bot."""
@@ -40,7 +41,7 @@ async def prefix(ctx, pre):
         log.queue_data(e)
     finally:
         log.write()
-
+'''
 
 @bot.command(pass_context=True)
 async def additem(ctx, title, desc, sell, buy, amt):
