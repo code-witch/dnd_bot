@@ -25,3 +25,5 @@ class Item:
 	def set_amount(self, amt):
 		self.amount = amt
 	
+	def __str__(self):
+		return self.name
